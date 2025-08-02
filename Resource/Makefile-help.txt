@@ -1,0 +1,5 @@
+examples:
+    make host                          Just build the software with all-default
+                                       parameters, no user-customisation.
+
+    make host-build-dockerimage        Build the docker image that builds the software.

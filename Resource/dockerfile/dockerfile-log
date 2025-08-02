@@ -1,0 +1,7 @@
+ARG HOSTARG_BASEIMAGE=alpine:3.22
+
+FROM ${HOSTARG_BASEIMAGE}
+COPY . /project/
+WORKDIR /project/
+RUN apk update && apk upgrade && apk add make
+CMD ["make", "container-log"]
